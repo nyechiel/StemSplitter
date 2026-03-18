@@ -62,4 +62,4 @@ yt-dlp may need the `--js-runtimes node` flag. This is already configured in the
 
 ## License
 
-MIT
+[MIT](LICENSE)
