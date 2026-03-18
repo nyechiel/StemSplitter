@@ -54,12 +54,6 @@ npm install
 npm run dev
 ```
 
-The app runs at [http://localhost:5173](http://localhost:5173).
-
-### Note for Fedora users
-
-yt-dlp may need the `--js-runtimes node` flag. This is already configured in the backend.
-
 ## License
 
 [MIT](LICENSE)
