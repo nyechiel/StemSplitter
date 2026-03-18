@@ -54,6 +54,10 @@ npm install
 npm run dev
 ```
 
+## Note
+
+There are currently no plans to make this app externally available. This is primarily a project for practicing AI-driven product development.
+
 ## License
 
 [MIT](LICENSE)
