@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #09090b;
+  --bg-surface: rgba(24, 24, 27, 0.8);
+  --bg-card: #18181b;
+  --bg-input: rgba(39, 39, 42, 0.5);
+  --bg-control: #27272a;
+  --bg-control-hover: #3f3f46;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+  --text-control: #a1a1aa;
+  --text-control-hover: #ffffff;
+  --border: rgba(39, 39, 42, 0.5);
+  --border-solid: #27272a;
+  --border-control: #3f3f46;
+}
+
+.light {
+  --bg-primary: #fafafa;
+  --bg-surface: rgba(241, 241, 244, 0.9);
+  --bg-card: #ffffff;
+  --bg-input: rgba(228, 228, 231, 0.5);
+  --bg-control: #e4e4e7;
+  --bg-control-hover: #d4d4d8;
+  --text-primary: #09090b;
+  --text-secondary: #3f3f46;
+  --text-muted: #71717a;
+  --text-control: #52525b;
+  --text-control-hover: #09090b;
+  --border: rgba(228, 228, 231, 0.8);
+  --border-solid: #d4d4d8;
+  --border-control: #d4d4d8;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.3s, color 0.3s;
+}
+
+@utility bg-primary {
+  background-color: var(--bg-primary);
+}
+@utility bg-surface {
+  background-color: var(--bg-surface);
+}
+@utility bg-card {
+  background-color: var(--bg-card);
+}
+@utility bg-input {
+  background-color: var(--bg-input);
+}
+@utility bg-control {
+  background-color: var(--bg-control);
+}
+@utility bg-control-hover {
+  background-color: var(--bg-control-hover);
+}
+@utility text-primary {
+  color: var(--text-primary);
+}
+@utility text-secondary {
+  color: var(--text-secondary);
+}
+@utility text-muted {
+  color: var(--text-muted);
+}
+@utility text-control {
+  color: var(--text-control);
+}
+@utility text-control-hover {
+  color: var(--text-control-hover);
+}
+@utility border-border {
+  border-color: var(--border-solid);
+}
+@utility border-control {
+  border-color: var(--border-control);
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
