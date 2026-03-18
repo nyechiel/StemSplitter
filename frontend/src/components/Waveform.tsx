@@ -82,7 +82,9 @@ export default function Waveform({ url, color, currentTime, duration, isOn, play
         }
 
         const max = Math.max(...peaks);
-        if (max > 0) {
+        // Only normalize if the stem has meaningful audio;
+        // otherwise keep peaks tiny so silent stems look silent
+        if (max > 0.01) {
           for (let i = 0; i < peaks.length; i++) peaks[i] /= max;
         }
 
