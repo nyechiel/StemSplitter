@@ -6,7 +6,7 @@ Paste a YouTube URL, and StemSplitter will download the audio, separate it into 
 
 ![Screenshot placeholder](docs/screenshot.png)
 
-> **Note:** There are currently no plans to make this app externally available. This is primarily a project for practicing AI-driven product development.
+> **Note:** There are currently no plans to make this app publicly available as a hosted service. It is primarily a project for me to practice AI-driven product development.
 
 ## Tech Stack
 
